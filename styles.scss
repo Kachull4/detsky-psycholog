@@ -1,0 +1,66 @@
+$background: #fffffe;
+$text: #00214d;
+$light: #00ebc7;
+$dark: #ff5470;
+$button: #fde24f;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  color: $text;
+  background-color: $background;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.main-menu {
+  text-align: right;
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: relative;
+
+  &__item {
+    display: inline;
+  }
+  &__link {
+    padding: 2rem;
+    display: inline-block;
+  }
+  &__link:hover {
+    color: black;
+    background-color: #ffde29;
+  }
+}
+.container {
+  max-width: 100rem;
+  padding: 5rem;
+  margin: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10rem;
+
+  &--light {
+    background-color: $light;
+  }
+  &--dark {
+    background-color: $dark;
+  }
+}
+/*.section {
+  padding: 10rem;
+
+  &--light {
+    background-color: $light;
+  }
+  &--dark {
+    background-color: $dark;
+  }
+}*/
