@@ -16,6 +16,7 @@ body {
 }
 
 a {
+  color: #00214d;
   text-decoration: none;
 }
 
@@ -36,8 +37,11 @@ a {
 }
 
 .main-menu__link:hover {
-  color: black;
-  background-color: #ffde29;
+  background-color: #fde24f;
+}
+
+.header__title {
+  font-size: 6rem;
 }
 
 .container {
@@ -57,14 +61,11 @@ a {
   background-color: #ff5470;
 }
 
-/*.section {
-  padding: 10rem;
-
-  &--light {
-    background-color: $light;
-  }
-  &--dark {
-    background-color: $dark;
-  }
-}*/
+.section__title {
+  font-size: 4rem;
+  position: fixed;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=styles.css.map */

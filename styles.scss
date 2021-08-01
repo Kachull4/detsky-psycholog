@@ -19,6 +19,7 @@ body {
   box-sizing: border-box;
 }
 a {
+  color: $text;
   text-decoration: none;
 }
 .main-menu {
@@ -35,8 +36,12 @@ a {
     display: inline-block;
   }
   &__link:hover {
-    color: black;
-    background-color: #ffde29;
+    background-color: $button;
+  }
+}
+.header {
+  &__title {
+    font-size: 6rem;
   }
 }
 .container {
@@ -54,13 +59,12 @@ a {
     background-color: $dark;
   }
 }
-/*.section {
-  padding: 10rem;
-
-  &--light {
-    background-color: $light;
+.section {
+  &__title {
+    font-size: 4rem;
+    position: fixed;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
   }
-  &--dark {
-    background-color: $dark;
-  }
-}*/
+}
