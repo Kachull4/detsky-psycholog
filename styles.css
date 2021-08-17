@@ -8,7 +8,8 @@ body {
 body {
   font-size: 2rem;
   color: #00214d;
-  background-color: #fffffe;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom right, #d5fcd5, #ffffce, #fce2b2, #fab7b7, pink, #ffbbff, #95deff);
 }
 
 * {
@@ -50,15 +51,8 @@ a {
   margin: 5rem;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10rem;
-}
-
-.container--light {
-  background-color: #00ebc7;
-}
-
-.container--dark {
-  background-color: #ff5470;
+  border: 1rem solid #ffee8f;
+  background-color: #fffffe;
 }
 
 .section__title {
