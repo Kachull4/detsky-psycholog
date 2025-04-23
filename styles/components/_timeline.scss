@@ -1,0 +1,46 @@
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 2px solid $title;
+  border-radius: 2px 0 0 2px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: $title;
+    border-radius: 0 2px 2px 0;
+  }
+
+  &__event {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -3rem;
+      top: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: $title;
+      border-radius: 50%;
+    }
+
+    h5 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0.25rem 0 0 0;
+    }
+  }
+}

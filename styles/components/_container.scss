@@ -1,0 +1,15 @@
+.container {
+  max-width: 1024px;
+  padding: 4rem 2rem;
+  margin-inline: auto;
+
+  @include media(md) {
+     padding: 8rem 2rem;
+  }
+
+  &--wide {
+    max-width: 1440px;
+  }
+}
+
+

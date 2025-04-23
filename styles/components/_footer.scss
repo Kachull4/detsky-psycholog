@@ -1,0 +1,9 @@
+.footer {
+  background-color: $background-medium;
+  color: $title;
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: $title;
+  }
+}

@@ -1,0 +1,15 @@
+.section {
+  &__title {
+    font-size: 4rem;
+    color: $title;
+  }
+
+  &--about {
+    background-color: $background-medium;
+    display: flex;
+  }
+
+  &--prices {
+    background-color: $background-dark;
+  }
+}

@@ -8,9 +8,7 @@ body {
 body {
   font-size: 2rem;
   color: #00214d;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: linear-gradient(to bottom right, #d5fcd5, #ffffce, #fce2b2, #fab7b7, pink, #ffbbff, #95deff);
+  background-color: #fffffe;
 }
 
 * {
@@ -22,23 +20,20 @@ a {
   text-decoration: none;
 }
 
-.main-menu {
+.menu {
   text-align: right;
   font-size: 2.5rem;
   font-weight: 600;
   position: relative;
 }
-
-.main-menu__item {
+.menu__item {
   display: inline;
 }
-
-.main-menu__link {
+.menu__link {
   padding: 2rem;
   display: inline-block;
 }
-
-.main-menu__link:hover {
+.menu__link:hover {
   background-color: #fde24f;
 }
 
@@ -52,15 +47,11 @@ a {
   margin: 5rem;
   margin-left: auto;
   margin-right: auto;
-  border: 1rem solid #ffee8f;
   background-color: #fffffe;
 }
 
 .section__title {
   font-size: 4rem;
   position: fixed;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
   text-transform: uppercase;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

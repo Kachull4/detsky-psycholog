@@ -1,0 +1,11 @@
+.button {
+    display: inline-block;
+    font-family: "Nunito";
+    background-color: $button;
+    color: $text-light;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+}
