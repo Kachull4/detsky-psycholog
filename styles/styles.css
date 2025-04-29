@@ -220,7 +220,7 @@ h5 {
 }
 @media (min-width: 768px) {
   .container {
-    padding: 8rem 2rem;
+    padding: 8rem 4rem;
   }
 }
 .container--wide {
@@ -413,6 +413,18 @@ h5 {
 .block--footer {
   display: block;
   text-align: center;
+}
+.block--confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.block--confirm .image {
+  max-width: 20%;
+}
+.block--confirm .button {
+  padding: 1rem 2rem;
 }
 
 .stack {
