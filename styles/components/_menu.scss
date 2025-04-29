@@ -2,6 +2,8 @@
   position: sticky;
   top: 0;
   background-color: $background-medium;
+  z-index: 100;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
 
   &__content {
     display: flex;
@@ -34,9 +36,11 @@
     &.is-active span:nth-child(1) {
       transform: rotate(45deg) translate(7px, 5px);
     }
+
     &.is-active span:nth-child(2) {
       opacity: 0;
     }
+
     &.is-active span:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px);
     }
@@ -75,9 +79,13 @@
     font-family: "Nunito";
     font-weight: 600;
     margin-bottom: 0;
-    padding: 1rem;
-    padding-bottom: calc(2rem - 3px);
+    padding: 0.5rem;
     border-bottom: 3px solid transparent;
+
+    @include media(md) {
+      padding: 1rem;
+      padding-bottom: calc(2rem - 3px);
+    }
 
     &:hover {
       border-color: $button;

@@ -46,6 +46,8 @@ li {
   position: sticky;
   top: 0;
   background-color: #FFF1C6;
+  z-index: 100;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
 }
 .menu__content {
   display: flex;
@@ -115,9 +117,14 @@ li {
   font-family: "Nunito";
   font-weight: 600;
   margin-bottom: 0;
-  padding: 1rem;
-  padding-bottom: calc(2rem - 3px);
+  padding: 0.5rem;
   border-bottom: 3px solid transparent;
+}
+@media (min-width: 768px) {
+  .menu__item {
+    padding: 1rem;
+    padding-bottom: calc(2rem - 3px);
+  }
 }
 .menu__item:hover {
   border-color: #f09e89;
@@ -448,6 +455,9 @@ h5 {
   position: relative;
   margin-bottom: 1rem;
 }
+.timeline__event:hover::before {
+  background-color: #afccc3;
+}
 .timeline__event::before {
   content: "";
   position: absolute;
@@ -457,6 +467,7 @@ h5 {
   height: 2rem;
   background-color: #0C5D58;
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 .timeline__event h5 {
   margin: 0;

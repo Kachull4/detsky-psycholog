@@ -24,6 +24,10 @@
     position: relative;
     margin-bottom: 1rem;
 
+    &:hover::before {
+      background-color: $background-dark;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -33,6 +37,7 @@
       height: 2rem;
       background-color: $title;
       border-radius: 50%;
+      transition: background-color 0.3s ease;
     }
 
     h5 {

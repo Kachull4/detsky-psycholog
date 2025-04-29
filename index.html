@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blanka Zemanová – dětská psycholožka v Mladé Boleslavi. Terapie a poradenství pro děti, dospívající a rodiče."
+    />
+    <meta property="og:title" content="Dětská psycholožka Blanka Zemanová" />
+    <meta
+      property="og:description"
+      content="Psychologické poradenství a terapie v Mladé Boleslavi."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/path/to/your-og-image.jpg" />
+    <meta property="og:url" content="https://www.detskypsycholog.cz" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +30,13 @@
     <title>Dětská psycholožka Blanka Zemanová</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav class="menu" aria-label="Hlavní navigace">
       <div class="menu__content">
-        <button class="menu__toggle" aria-label="Otevřít menu">
+        <button
+          class="menu__toggle"
+          aria-label="Otevřít menu"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -59,15 +75,23 @@
             </p>
             <a class="button" href="#contacts">Objednat se</a>
           </div>
-          <img class="image" src="/image.png" />
+          <img
+            class="image"
+            src="/image.png"
+            alt="Blanka Zemanová, dětská psycholožka"
+          />
         </div>
       </div>
     </header>
-    <section class="section section--about" id="about">
+    <section
+      class="section section--about"
+      id="about"
+      aria-labelledby="about-heading"
+    >
       <div class="container">
         <div class="block block--about">
           <div class="text">
-            <h2>O mně</h2>
+            <h2 id="about-heading">O mně</h2>
             <p>
               Jmenuji se Blanka Zemanová a jsem psycholožka s dlouholetou praxí
               v oblasti poradenství a psychoterapie pro děti, dospívající a
@@ -203,16 +227,20 @@
               </div>
             </details>
           </div>
-          <img class="image" src="/image1.png" alt="" />
+          <img class="image" src="/image1.png" alt="Ilustrace dítěte s míčem" />
         </div>
       </div>
     </section>
-    <section class="section" id="specialization">
+    <section
+      class="section"
+      id="specialization"
+      aria-labelledby="specialization-heading"
+    >
       <div class="container">
         <div class="block block--specialization">
-          <h2>S čím pomáhám</h2>
+          <h2 id="specialization-heading">S čím pomáhám</h2>
           <div class="stack">
-            <img class="image" src="/image2.png" alt="" />
+            <img class="image" src="/image2.png" alt="Ilustrace žirafy" />
             <div>
               <h3>Emoce</h3>
               <ul class="list">
@@ -230,7 +258,7 @@
             </div>
           </div>
           <div class="stack">
-            <img class="image" src="/image3.png" alt="" />
+            <img class="image" src="/image3.png" alt="Ilustrace hry" />
             <div>
               <h3>Chování</h3>
               <ul class="list">
@@ -243,7 +271,7 @@
             </div>
           </div>
           <div class="stack">
-            <img class="image" src="/image4.png" alt="" />
+            <img class="image" src="/image4.png" alt="Ilustrace chlapce" />
             <div>
               <h3>Škola</h3>
               <ul class="list">
@@ -262,11 +290,15 @@
         </div>
       </div>
     </section>
-    <section class="section section--prices" id="prices">
+    <section
+      class="section section--prices"
+      id="prices"
+      aria-labelledby="prices-heading"
+    >
       <div class="container">
         <div class="block block--prices">
           <div class="text">
-            <h2>Ceník</h2>
+            <h2 id="prices-heading">Ceník</h2>
             <div class="price">
               <h3>Testy profesní orientace (pro žáky 9. tříd)</h3>
               <p>
@@ -311,14 +343,14 @@
               </p>
             </div>
           </div>
-          <img class="image" src="/image5.png" alt="" />
+          <img class="image" src="/image5.png" alt="Ilustrace duhy" />
         </div>
       </div>
     </section>
-    <section class="section" id="contacts">
+    <section class="section" id="contacts" aria-labelledby="contact-heading">
       <div class="container">
         <div class="block block--contact">
-          <h2>Objednání a kontakt</h2>
+          <h2 id="contact-heading">Objednání a kontakt</h2>
           <div class="contact">
             <div class="text">
               <h3>Blanka Zemanová</h3>
@@ -332,7 +364,11 @@
               <div>IČO: 87527251</div>
               <div>praxe: Kollárova 261/3, 293 01 Mladá Boleslav</div>
             </div>
-            <img class="image" src="/image6.png" alt="" />
+            <img
+              class="image"
+              src="/image6.png"
+              alt="Ilustrace emailového zavináče"
+            />
           </div>
           <form
             class="form"
@@ -340,13 +376,8 @@
             method="POST"
             autocomplete="on"
           >
-            <!-- Skryté pole pro ochranu proti spamu -->
             <input type="text" name="_honey" style="display: none" />
-
-            <!-- Zakáže captcha od Formsubmit (můžeš smazat, pokud chceš jejich ochranu) -->
             <input type="hidden" name="_captcha" value="false" />
-
-            <!-- Redirect po odeslání (volitelné) -->
             <input
               type="hidden"
               name="_next"
@@ -415,10 +446,10 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
         <div class="block block--footer">
-          <span>© </span><a href="frontendistka.cz">Kateřina Hoffman</a
+          <span>© </span><a href="https://frontendistka.cz">Kateřina Hoffman</a
           ><span> 2025</span>
         </div>
       </div>
