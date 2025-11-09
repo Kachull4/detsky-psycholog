@@ -63,7 +63,7 @@
 
     @include media(md) {
       flex-direction: row;
-      gap: 2rem;
+      gap: 1rem;
       opacity: 1;
       max-height: unset;
       padding-bottom: 0;
@@ -75,30 +75,28 @@
     }
   }
 
-  &__link {
-    @include media(md) {
-      padding-bottom: calc(2rem - 3px);
-    }
-
-    &.active {
-      .menu__item {
-        border-color: $button;
-      }
-    }
+  &__item {
+    padding: 1rem;
+    list-style: none;
   }
 
-  &__item {
+  &__link {
     font-family: "Nunito";
     font-weight: 600;
     margin-bottom: 0;
     border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
 
     @include media(md) {
       padding: 1rem;
-      padding-bottom: calc(2rem - 3px);
+      padding-bottom: calc(1.6rem - 3px);
     }
 
     &:hover {
+      border-color: $button;
+    }
+
+    &.active {
       border-color: $button;
     }
   }
