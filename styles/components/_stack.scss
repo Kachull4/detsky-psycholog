@@ -1,13 +1,11 @@
 .stack {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 4rem;
 
   @include media(md) {
-    flex-direction: row;
     align-items: center;
     gap: 5rem;
   }

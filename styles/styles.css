@@ -157,9 +157,9 @@ h6 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   h1 {
@@ -210,7 +210,7 @@ h5 {
   display: flex;
 }
 .section--prices {
-  background-color: #afccc3;
+  background-color: rgb(174.5923566879, 203.9076433121, 194.6942675159);
 }
 
 .container {
@@ -237,7 +237,9 @@ h5 {
 @media (min-width: 768px) {
   .block--intro {
     flex-direction: row;
+    justify-content: flex-end;
     gap: 10rem;
+    padding-top: 6rem;
   }
 }
 .block--intro .break {
@@ -256,10 +258,15 @@ h5 {
     order: 1;
   }
 }
+.block--intro .subtitle {
+  text-align: right;
+  margin-bottom: 4rem;
+}
 .block--intro .text {
   font-size: 2rem;
   margin-bottom: 4rem;
   flex-grow: 1;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .block--intro .text {
@@ -273,20 +280,21 @@ h5 {
 }
 @media (min-width: 768px) {
   .block--intro .image {
-    max-width: 40%;
+    max-width: 30%;
     order: 2;
   }
 }
 .block--intro .button {
   font-size: 2.4rem;
   padding: 1.6rem 4rem;
+  margin-bottom: 1rem;
 }
 .block--about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 @media (min-width: 768px) {
   .block--about {
@@ -296,6 +304,9 @@ h5 {
 }
 .block--about h3 {
   margin-bottom: 2rem;
+}
+.block--about .text {
+  text-align: justify;
 }
 @keyframes fadeIn {
   from {
@@ -338,11 +349,12 @@ h5 {
 }
 @media (min-width: 768px) {
   .block--specialization .image {
-    max-width: 10%;
+    max-width: 15%;
   }
 }
 .block--specialization .text {
   margin-top: 4rem;
+  text-align: justify;
 }
 .block--prices {
   display: flex;
@@ -388,14 +400,14 @@ h5 {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #afccc3;
+  color: rgb(174.5923566879, 203.9076433121, 194.6942675159);
 }
 .block--prices .image {
   max-width: 60%;
 }
 @media (min-width: 768px) {
   .block--prices .image {
-    max-width: 20%;
+    max-width: 40%;
   }
 }
 .block--contact .contact {
@@ -405,6 +417,9 @@ h5 {
 }
 .block--contact .text {
   margin-bottom: 4rem;
+}
+.block--contact .info {
+  font-size: 1.6rem;
 }
 .block--contact .image {
   max-width: 15%;
@@ -429,15 +444,13 @@ h5 {
 
 .stack {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
   .stack {
-    flex-direction: row;
     align-items: center;
     gap: 5rem;
   }
@@ -468,7 +481,7 @@ h5 {
   margin-bottom: 1rem;
 }
 .timeline__event:hover::before {
-  background-color: #afccc3;
+  background-color: rgb(174.5923566879, 203.9076433121, 194.6942675159);
 }
 .timeline__event::before {
   content: "";

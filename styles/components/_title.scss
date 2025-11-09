@@ -13,9 +13,9 @@ h6 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @include media(md) {
     font-size: 6rem;
