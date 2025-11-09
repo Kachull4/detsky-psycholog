@@ -40,7 +40,6 @@
       margin: 0;
       margin-bottom: 1rem;
       color: $title;
-      width: 100%;
 
       @include media(md) {
         font-size: 6rem;
@@ -57,7 +56,6 @@
       margin: 0;
       margin-bottom: 4rem;
       color: $title;
-      width: 100%;
 
       @include media(md) {
         font-size: 2.6rem;
@@ -174,6 +172,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+
+    .title {
+      width: 100%;
+    }
 
     .text {
       display: flex;

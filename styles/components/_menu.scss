@@ -76,6 +76,10 @@
   }
 
   &__link {
+    @include media(md) {
+      padding-bottom: calc(2rem - 3px);
+    }
+
     &.active {
       .menu__item {
         border-color: $button;
@@ -87,7 +91,6 @@
     font-family: "Nunito";
     font-weight: 600;
     margin-bottom: 0;
-    padding: 0.5rem;
     border-bottom: 3px solid transparent;
 
     @include media(md) {

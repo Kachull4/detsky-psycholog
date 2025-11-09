@@ -113,6 +113,11 @@ li {
   max-height: 400px;
   opacity: 1;
 }
+@media (min-width: 768px) {
+  .menu__link {
+    padding-bottom: calc(2rem - 3px);
+  }
+}
 .menu__link.active .menu__item {
   border-color: #f09e89;
 }
@@ -120,7 +125,6 @@ li {
   font-family: "Nunito";
   font-weight: 600;
   margin-bottom: 0;
-  padding: 0.5rem;
   border-bottom: 3px solid transparent;
 }
 @media (min-width: 768px) {
@@ -156,7 +160,6 @@ h6 {
   margin: 0;
   margin-bottom: 1rem;
   color: #0C5D58;
-  width: 100%;
 }
 
 h1 {
@@ -266,7 +269,6 @@ h5 {
   margin: 0;
   margin-bottom: 1rem;
   color: #0C5D58;
-  width: 100%;
 }
 @media (min-width: 768px) {
   .block--intro .quotation {
@@ -283,7 +285,6 @@ h5 {
   margin: 0;
   margin-bottom: 4rem;
   color: #0C5D58;
-  width: 100%;
 }
 @media (min-width: 768px) {
   .block--intro .cite {
@@ -389,6 +390,9 @@ h5 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+.block--prices .title {
+  width: 100%;
 }
 .block--prices .text {
   display: flex;
