@@ -75,6 +75,14 @@
     }
   }
 
+  &__link {
+    &.active {
+      .menu__item {
+        border-color: $button;
+      }
+    }
+  }
+
   &__item {
     font-family: "Nunito";
     font-weight: 600;

@@ -14,3 +14,26 @@ document.querySelectorAll(".menu__link").forEach((link) => {
     menu.classList.remove("is-active");
   });
 });
+
+const sections = document.querySelectorAll("header[id], section[id]");
+const navLinks = document.querySelectorAll(".menu__link");
+
+window.addEventListener("scroll", () => {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 70;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(`#${currentSection}`)) {
+      link.classList.add("active");
+    }
+  });
+});

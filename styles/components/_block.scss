@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
 
     @include media(md) {
       flex-direction: row;
@@ -23,15 +23,45 @@
 
     .content {
       order: 2;
+      text-align: center;
 
       @include media(md) {
         order: 1;
+        text-align: left;
       }
     }
 
-    .subtitle {
+    .quotation {
+      font-family: "Nunito";
+      font-weight: bold;
+      font-size: 3.6rem;
+      line-height: 1.2;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 1rem;
+      color: $title;
+      width: 100%;
+
+      @include media(md) {
+        font-size: 6rem;
+      }
+    }
+
+    .cite {
+      font-family: "Nunito";
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 1.2;
       text-align: right;
+      display: block;
+      margin: 0;
       margin-bottom: 4rem;
+      color: $title;
+      width: 100%;
+
+      @include media(md) {
+        font-size: 2.6rem;
+      }
     }
 
     .text {
