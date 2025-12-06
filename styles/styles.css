@@ -220,7 +220,7 @@ h5 {
 }
 @media (min-width: 768px) {
   .container {
-    padding: 8rem 4rem;
+    padding: 8rem 2rem;
   }
 }
 .container--wide {
@@ -382,7 +382,6 @@ h5 {
   }
 }
 .block--specialization .text {
-  margin-top: 4rem;
   text-align: justify;
 }
 .block--prices {
